@@ -431,7 +431,7 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
                 
                 _statusBarBackgroundView.frame = sbBgFrame;
                 [self.webView.superview addSubview:_statusBarBackgroundView];
-            }else if(height!=20){
+            }else if(height>25){//extra bar showing
                 NSLog(@"FIX WINDOW BOUNDS!");
                 CGRect sbBgFrame = _statusBarBackgroundView.frame;
                 frame.origin.y = (height-20);//allow the normal 20px height status bar to show
