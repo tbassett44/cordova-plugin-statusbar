@@ -55,12 +55,12 @@
 
     <!-- ios -->
     <platform name="ios">
-        <config-file parent="UIStatusBarHidden" target="*-Info.plist">
-            <true/>
-        </config-file>
-        <config-file parent="UIViewControllerBasedStatusBarAppearance" target="*-Info.plist">
-            <false/>
-        </config-file>
+<!--        <config-file parent="UIStatusBarHidden" target="*-Info.plist">-->
+<!--            <true/>-->
+<!--        </config-file>-->
+<!--        <config-file parent="UIViewControllerBasedStatusBarAppearance" target="*-Info.plist">-->
+<!--            <false/>-->
+<!--        </config-file>-->
         <config-file target="config.xml" parent="/*">
             <feature name="StatusBar">
                 <param name="ios-package" value="CDVStatusBar" />
