@@ -21,7 +21,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-statusbar"
+    id="cordova-plugin-statusbar-GROUPUP"
     version="2.0.0-dev">
     <name>StatusBar</name>
     <description>Cordova StatusBar Plugin</description>
@@ -55,7 +55,12 @@
 
     <!-- ios -->
     <platform name="ios">
-
+        <config-file parent="UIStatusBarHidden" target="*-Info.plist">
+            <true/>
+        </config-file>
+        <config-file parent="UIViewControllerBasedStatusBarAppearance" target="*-Info.plist">
+            <false/>
+        </config-file>
         <config-file target="config.xml" parent="/*">
             <feature name="StatusBar">
                 <param name="ios-package" value="CDVStatusBar" />
